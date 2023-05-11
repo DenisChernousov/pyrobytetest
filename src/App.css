@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: "Intro Bold";
+    src: url("./assets/fonts/Intro-Bold.ttf") format("ttf"),
+    url("./assets/fonts/Intro-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: Bold;
+    font-display: swap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "Intro Book";
+    src: url("./assets/fonts/Intro-Book.ttf") format("ttf"),
+    url("./assets/fonts/Intro-Book.woff") format("woff");
+    font-weight: 400;
+    font-style: Normal;
+    font-display: swap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: "Intro Book Italic";
+    src: url("./assets/fonts/Intro-Book-Italic.ttf") format("ttf"),
+    url("./assets/fonts/Intro-Book-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: Normal;
+    font-display: swap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: "Intro Regular";
+    src: url("./assets/fonts/Intro-Regular.ttf") format("ttf"),
+    url("./assets/fonts/Intro-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: Normal;
+    font-display: swap;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+    font-family: "Intro Light";
+    src: url("./assets/fonts/Intro-Light.ttf") format("ttf"),
+    url("./assets/fonts/Intro-Light.woff") format("woff");
+    font-weight: 400;
+    font-style: Normal;
+    font-display: swap;
+}
+:root {
+    --yellow: #FFDD2D;
+    --blue: #2B6BF3;
+    --darkblue: #1D253C;
+    --LightBlue: #C2D2F4;
+    --Red: #FD466E;
+    --BgColor: #F1F4FC;
+    --LightFreen: #6FCF97;
+    --green: #27AE60;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    font-family: 'Intro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1D253C;
+}
+
+h2 {
+    font-family: 'Intro Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1D253C;
+}
+
+h3 {
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1D253C;
+}
+
+h4 {
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1D253C;
+}
+
+h5 {
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D253C;
 }

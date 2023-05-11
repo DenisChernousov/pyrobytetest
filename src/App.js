@@ -1,11 +1,17 @@
+import './Reset.css';
 import './App.css';
 
-function App(props) {
-  return (
-    <div className="App">
+import {BrowserRouter} from "react-router-dom";
+import Header from "./categories/Header/Header";
 
-    </div>
-  );
+const App = (props) => {
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Header/>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
