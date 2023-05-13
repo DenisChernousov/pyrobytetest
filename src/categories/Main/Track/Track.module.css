@@ -1,0 +1,157 @@
+.main {
+
+    background: #F8FAFF;
+    background-image: url("../../assets/img/Graphic.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-left: 103px;
+    padding-top: 36px;
+    padding-right: 32px;
+    padding-right: 32px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /*max-width: 1366px;*/
+    height: 784px;
+    width: 100%;
+    /*margin: 0 auto;*/
+
+}
+
+.Infoinner {
+    width: 375px;
+    /*margin: 0 auto;*/
+
+}
+
+.title {
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1D253C;
+    margin-top: 30px;
+}
+
+.text {
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    margin-top: 33px;
+    margin-bottom: 33px;
+
+}
+
+.link {
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--blue);
+    text-decoration: none;
+
+}
+
+.link:hover {
+    opacity: 0.7;
+}
+
+.worksTitle {
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1D253C;
+    margin-top: 80px;
+    margin-bottom: 22px;
+}
+
+.videoItem {
+    border-radius: 8px;
+    position: relative;
+    width: 374px;
+    height: 232px;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.play:hover {
+    position: absolute;
+    width: 132px;
+}
+
+.trackInner {
+    max-width: 360px;
+    max-height: 144px;
+    background: #FFDD2D;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    margin-left: 496px;
+    overflow: hidden;
+    padding: 25px 40px 32px;
+}
+.trackInnerTitle{
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1D253C;
+}
+.trackInnerInputWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    height: 40px;
+    left: 40px;
+    top: 72px;
+
+    margin-top: 9px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+.trackInnerInput{
+    border: none;
+    outline: none;
+    padding: 16px;
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D253C;
+}
+.trackInnerInput::placeholder{
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+
+    align-items: center;
+      color: #1D253C;
+    opacity: 0.32;
+}
+.trackInnerBtn{
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 12px;
+}
