@@ -1,0 +1,16 @@
+.info {
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1D253C;
+}
+.infoText{
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
