@@ -1,0 +1,26 @@
+.since{
+    display: flex;
+    justify-content: center;
+    padding: 103px 86px;
+}
+.text{
+    width: 1160px;
+    display: flex;
+    position: relative;
+}
+.textItem{
+
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+.text img{
+    position: absolute  ;
+    right: 15px;
+    bottom: 0;
+cursor: pointer;
+
+}

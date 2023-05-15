@@ -1,0 +1,11 @@
+.img{
+    filter: sepia(100%) hue-rotate(170deg);
+    opacity: 0.7;
+    /*Наиболее разумно не в голубом цвете, а в сером. Можно через js подкинуть тег, но нужно ли?*/
+    transition: all .3s;
+}
+.img:hover{
+    filter: sepia(0) hue-rotate(0deg);
+    transition: all .3s;
+    opacity: 1;
+}
