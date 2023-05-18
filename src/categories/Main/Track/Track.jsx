@@ -1,7 +1,7 @@
-import style from "./Truck.module.css";
+import style from "./Track.module.css";
 import Search from "../../../assets/img/Search.svg";
 
-const Truck = (props) => {
+const Track = (props) => {
     return (
 
         <div className={style.trackInner}>
@@ -19,4 +19,4 @@ const Truck = (props) => {
     );
 }
 
-export default Truck;
+export default Track;

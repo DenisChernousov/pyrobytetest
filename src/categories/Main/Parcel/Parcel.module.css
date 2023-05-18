@@ -1,16 +1,339 @@
-.info {
+.inner {
+    box-sizing: border-box;
+    width: 360px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(43, 107, 243, 0.08);
+    border-radius: 8px;
+    border:2px solid rgba(183, 198, 231, 1);
+    margin-bottom: 100px;
+    margin-left: 496px;
+    padding: 36px 32px 24px ;
+
+}
+
+.title {
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1D253C;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.title img {
+    margin-left: 12px;
+
+
+}
+.i {
+    width: 24px;
+    height: 24px;
+    background: #DDE7FD;
+    margin-left: 12px;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+
+}
+.i::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    left: 50%;
+    top:25%;
+    transform: translateX(-25%);
+
+}
+.i::after{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 7px;
+    background-color: #fff;
+    left: 50%;
+    top:40%;
+    transform: translateX(-25%);
+}
+.i:hover{
+    background: #1D253C;
+}
+
+.switch {
+    display: flex;
+cursor: pointer;
+}
+
+.subtitle {
     font-family: 'Intro Regular';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: #1D253C;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #C4CEE6;
+    margin-left: 72px;
+    margin-bottom: 7px;
+
 }
-.infoText{
+
+.switchBtn:first-child{
+    border-radius: 8px 0px 0px 8px;
+}
+.switchBtn:last-child{
+    border-radius:0px  8px 8px 0px ;
+}
+.switchBtn{
+
+    /*width: 100px;*/
+    /*height: 84px;*/
+    /*   background: #EFF4FF;*/
+    position: relative;
+    cursor: pointer;
+    min-width: 72px;
+    width: 100px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(183, 198, 231, 1);
+    background-color: #EFF4FF;
+
+}
+.switchBtnAvtive{
+    outline: none;
+    border: 2px solid #2b6bf3;
+    background-color: #fff;
+}
+.switchBtnInput{
+    display: none;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    /*left: 9999px;*/
+}
+.switchBtnImg{
+    width: 56px;
+    height: 56px;
+}
+.switchBtnImgFoot{
+    width: 68px;
+    height: 56px;
+}
+.switchBtnText{
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1D253C;
+
+    opacity: 0.48;
+}
+.locationWrapper{
+    display: flex;
+
+}
+.locationProgressBar{
+    /*margin: 23px 16px 0 0;*/
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lineImg{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.locationInputs{
+    margin-top: 34px;
+    margin-left: 16px;
+
+}
+.locationTitle{
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #C4CEE6;
+}
+.locationField{
+    margin-top: 7px;
+    height: 26px;
+    width: 256px;
+    border: none;
+    border-bottom: 2px solid rgba(43,107,243,.16);
+    opacity: 0.56;
+    outline: none;
+}
+.locationField:focus{
+    opacity: 1;
+    border-bottom: 2px solid #2B6BF3;
+
+}
+.locationField::placeholder{
     font-family: 'Intro Book';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #666666;
+    display: flex;
+    align-items: center;
+    color: #1D253C;
+
+}
+.LocationInput + .LocationInput{
+    margin-top: 37px;
+}
+
+.btnBlue{
+    width: 296px;
+    height: 48px;
+    background: var(--blue);
+    border-radius: 32px;
+    border:none;
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+cursor: pointer;
+    transition: 0.8s;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.btnBlue:hover{
+    background: #1252DB;
+    transition: 0.4s;
+}
+
+.btnBlueClear{
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background: transparent;
+    border: none;
+    color: #999999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.btnBlueClear img{
+    margin-right: 8px;
+
+}
+.btnClearBox{
+    display: flex;
+    justify-content: center;
+}
+
+
+.SliderImg{
+    filter: sepia(100%) hue-rotate(170deg);
+    opacity: 0.7;
+    /*Наиболее разумно не в голубом цвете, а в сером. Можно через js подкинуть тег, но нужно ли?*/
+    transition: all .3s;
+}
+.SliderImg:hover{
+    filter: sepia(0) hue-rotate(0deg);
+    transition: all .3s;
+    opacity: 1;
+}
+
+
+.slick-list {
+    position: relative;
+    display: block !important;
+    overflow: hidden;
+    padding: 100px !important;
+    width: 100%;
+
+}
+
+
+
+
+
+.slick-slide:not(.slick-active) {
+    position: relative;
+    z-index: 997;
+
+}
+.slick-slide.slick-active:not(.slick-current) {
+    position: relative;
+    z-index: 998;
+    transform: scale(1.3);
+    transition: 0.25s;
+}
+.slick-slide.slick-active.slick-current {
+    position: relative;
+    z-index: 999;
+    transform: scale(1.6);
+    transition: 0.25s;
+}
+
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+.custom-prevArrow,
+.custom-nextArrow {
+    position: relative;
+    z-index: 99999;
+    top: -10px;
+}
+.custom-prevArrow {
+    left: -10px;
+}
+.custom-nextArrow {
+    right: -10px;
+}
+.custom-prevArrow:hover,
+.custom-nextArrow:hover {
+    fill: red;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 360px) {
+
+.inner{
+    width: 328px;
+    margin-left: 0;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+    .switchBtnText {
+
+        display: none !important ;
+    }
+    .locationField{
+        width: 256px;
+    }
+    .btnBlueClear{
+        margin-top: 16px;
+    }
+
+.title{
+
+}
 }

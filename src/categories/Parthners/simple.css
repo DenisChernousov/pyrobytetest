@@ -1,0 +1,194 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+.slick-slider {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-top: 24px;*/
+    /*padding-bottom: 25px;*/
+    /*padding-right: 250px;*/
+
+}
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    /*padding-left: 100px;*/
+}
+.slick-slide div div span {
+    margin-top: 10px;
+    width: inherit;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #111;
+
+}
+.slick-slide .image {
+    object-fit: cover;
+    border-radius: 2px;
+    min-width: 150px !important;
+    width: 80%;
+    filter: grayscale(100%);
+}
+
+.slick-slide div {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*filter: sepia(100%) hue-rotate(170deg);*/
+    /*opacity: 0.7;*/
+    /*!*Наиболее разумно не в голубом цвете, а в сером. Можно через js подкинуть тег, но нужно ли?*!*/
+    /*transition: all .3s;*/
+}
+.slickImg{
+    filter: sepia(100%) hue-rotate(170deg);
+    opacity: 0.7;
+    /*Наиболее разумно не в голубом цвете, а в сером. Можно через js подкинуть тег, но нужно ли?*/
+    transition: all .3s;
+}
+.slickImg:hover {
+    filter: sepia(0) hue-rotate(0deg);
+    transition: all .3s;
+    opacity: 1;
+}
+@media screen and (max-width: 360px){
+    .slick-slide .slick-cloned {
+        width: 0;
+    }
+    .slick-slide img{
+        margin:  0 1000px;
+    }
+    .slick-slider{
+        width: 200%;
+        margin-top: 20px;
+    }
+
+}

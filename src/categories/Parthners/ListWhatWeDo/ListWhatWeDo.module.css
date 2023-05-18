@@ -1,11 +1,88 @@
-.img{
-    filter: sepia(100%) hue-rotate(170deg);
-    opacity: 0.7;
-    /*Наиболее разумно не в голубом цвете, а в сером. Можно через js подкинуть тег, но нужно ли?*/
-    transition: all .3s;
+
+.item {
+
+    max-width: 300px;
+    /*height: 280px;*/
+    background: transparent;
+    border-radius: 8px;
+    /*border: 1px solid rgba(183, 198, 231, 1);*/
+    padding: 24px 24px 20px 20px;
+    margin-bottom: 17px;
+    transition: all .1s;
 }
-.img:hover{
-    filter: sepia(0) hue-rotate(0deg);
-    transition: all .3s;
-    opacity: 1;
+
+.item + .item {
+    margin-left: 50px;
+}
+
+
+.title {
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #1D253C;
+    margin-bottom: 17px;
+}
+
+.imgBox {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgOne {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(43, 107, 243, 0.16);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    margin-bottom: 31px;
+}
+
+.imgOne img {
+    height: 40px;
+    width: 40px;
+
+}
+
+
+
+.text {
+    font-family: 'Intro Book';
+    font-style: normal;
+    white-space: pre-line;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+
+}
+
+.textBox {
+    width: 300px;
+}
+.textBox img{
+    margin-left: 8px;
+}
+
+@media screen and (max-width: 360px){
+
+.item{
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
+    .item + .item{
+        margin-left: 0;
+    }
 }

@@ -1,11 +1,4 @@
-@font-face {
-    font-family: "Intro Bold";
-    src: url("./assets/fonts/Intro-Bold.ttf") format("ttf"),
-    url("./assets/fonts/Intro-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: Bold;
-    font-display: swap;
-}
+
 
 @font-face {
     font-family: "Intro Book";
@@ -52,9 +45,11 @@
     --LightFreen: #6FCF97;
     --green: #27AE60;
 }
-
+html{
+    overflow-x:hidden;
+}
 h1 {
-    font-family: 'Intro Bold';
+    font-family: 'Intro Regular';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -63,7 +58,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Intro Bold';
+    font-family: 'Intro Regular';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;

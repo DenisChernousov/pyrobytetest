@@ -1,0 +1,16 @@
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.line{
+    height: 2px;
+    width: calc(50% - 50px);
+    background: linear-gradient(0deg, #B7C6E7, #B7C6E7), #C2D2F4;
+    opacity: 0.5;;
+}
+.midImg{
+    height: 28px;
+    width: 32px;
+}

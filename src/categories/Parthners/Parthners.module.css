@@ -1,0 +1,211 @@
+.inner{
+    position: relative;
+    width: 100%;
+    margin-bottom: 48px;
+}
+.bgMask{
+    position: absolute;
+    right: -18px;
+    top: 190px;
+
+
+}
+.whatWeDo{
+    padding-top: 74px;
+    padding-bottom: 72px;
+    width: 100%;
+    background: linear-gradient(293.74deg,#f8faff 34.3%,#f2f6ff 99.57%);
+    border-top-left-radius: 578px;
+    border-bottom-left-radius: 578px;
+    margin-top: 65px;
+    background-color: rgba(248, 250, 255, 1);
+}
+.titleBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 84px;
+    margin-bottom: 76px;
+}
+.title{
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #1D253C;
+    margin-bottom: 50px;
+}
+
+.btnBox{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 184px;
+    border: 1px solid #DDE7FD;
+    border-radius: 24px;
+    background-color: transparent;
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+       text-align: center;
+    color: #1D253C;
+    cursor: pointer;
+}
+.btn img{
+    margin-right: 10px;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    padding-left: 112px;
+    padding-right: 164px;
+
+
+}
+.itemsWhatWeDo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 220px;
+    padding-right: 220px;
+
+}
+.calc{
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(43, 107, 243, 1);
+}
+.subtitle{
+    margin: 0 auto;
+    font-family: 'Intro Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #1D253C;
+    opacity: 0.48;
+    width: 754px;
+    height: 58px;
+    margin-top: 29px;
+    margin-bottom: 39px;
+}
+
+.GetStartedBtnInner{
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+}
+.GetStartedBtn{
+    background: #FFDD2D;
+    border-radius: 32px;
+    width: 296px;
+    height: 48px;
+    border: none;
+
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+     color: #1D253C;
+    cursor: pointer;
+}
+.GetStartedBtn:hover{
+    color: #FFF;
+}
+
+.paymentMethods{
+    margin-top: 98px;
+    margin-bottom: 46px;
+}
+
+.sliderBox{
+    padding-left: 171px;
+    padding-right: 171px;
+    margin: 0 auto;
+}
+.btnBoxAdaptive{
+    display: none;
+}
+
+@media screen and (max-width: 360px){
+    .itemsWhatWeDo {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        align-items: center;
+    }
+.bgMask{
+    display:none!important;
+}
+.btnBox{
+    display: none;
+}
+.centralize{
+    width: 0px;
+}
+    .titleBox{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 42px;
+    }
+.title{
+    font-family: 'Intro Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 11px;
+}
+    .btnBoxAdaptive{
+        display: flex;
+        justify-content: center;
+        margin-top: 54px;
+    }
+    .btn{
+        width: 328px;
+    }
+    .whatWeDo{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding-top: 54px;
+
+    }
+  .subtitle{
+      font-size: 20px;
+      line-height: 32px;
+      width: 328px;
+      height: 128px;
+      margin-bottom: 31px;
+  }
+  .itemsWhatWeDo{
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+  }
+    .sliderBox{
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 35px;
+    }
+}

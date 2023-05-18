@@ -1,24 +1,29 @@
 import React from "react";
-import style from "./Delivery.module.css";
+import style from "./Items.module.css";
 
 const Delivery = (props) => {
     return (
 
-        <div className={style.delivery}>
-            <div className={style.container}>
-            <h2>
 
-
-                Express delivery market revolution
-            </h2>
-            <span>
-                Express courier service in the city. We are a reliable logistics partner for delivery services for online stores and restaurants!
+        <div className={style.item}>
+            <h3 className={style.title}>
+                {props.title}
+            </h3>
+            <div className={style.imgBox}>
+                <div className={style.imgOne}>
+                    <img src={props.imgOne}/>
+                </div>
+                <div className={style.img}>
+                    <img src={props.img}/>
+                </div>
+            </div>
+            <div className={style.textBox}>
+            <span className={style.text}>
+                 {props.text}
             </span>
             </div>
-            <div className={style.items}>
-                
-            </div>
         </div>
+
     );
 }
 

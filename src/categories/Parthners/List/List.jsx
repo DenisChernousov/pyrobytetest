@@ -1,23 +1,28 @@
 import React from "react";
-import style from "./Parthners.module.css";
-import iconColab from "../../assets/img/IconColab.svg";
+import style from "./List.module.css";
+import {Link} from "react-router-dom";
+import Alva from "../../../assets/img/AlvaColor.svg";
+import tendo from "../../../assets/img/tendo.svg";
+import fagor from "../../../assets/img/fagor.svg";
+import radioSh from "../../../assets/img/radioshack.svg";
+import guitarCenter from "../../../assets/img/GuitarCenter.svg";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
-const Parthners = (props) => {
+
+
+const List = (props) => {
+
     return (
-        <div className={style.inner}>
-            <div className={style.centralize}></div>
-            <div>
-                <h2 className={style.title}>Our Parthners</h2>
-            </div>
-            <div className={style.btnBox}>
-                <button className={style.btn}>
-                    <img src={iconColab}/> Let's collaborate
-                </button>
-            </div>
-        </div>
+<></>
+        // <SimpleSlider/>
+
+
+
     )
 };
 
-export default Parthners;
+export default List;
 
 
