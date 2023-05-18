@@ -10,7 +10,7 @@ import logoPyro from "../../assets/img/logoPyro.svg";
 import shield from "../../assets/img/shield.svg";
 import twoPin from "../../assets/img/twoPin.svg";
 
-const Footer = (props) => {
+const FooterAdaptive = (props) => {
     return (
 
         <div className={style.footer}>
@@ -155,5 +155,5 @@ const Footer = (props) => {
         </div>);
 }
 
-export default Footer;
+export default FooterAdaptive;
 

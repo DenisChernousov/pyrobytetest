@@ -43,5 +43,8 @@
         width: 359px;
         padding: 0 16px;
     }
+    .textItem{
+        padding-top: 54px;
+    }
 
 }

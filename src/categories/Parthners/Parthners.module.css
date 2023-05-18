@@ -1,32 +1,36 @@
-.inner{
+.inner {
     position: relative;
     width: 100%;
     margin-bottom: 48px;
 }
-.bgMask{
+
+.bgMask {
     position: absolute;
     right: -18px;
     top: 190px;
 
 
 }
-.whatWeDo{
+
+.whatWeDo {
     padding-top: 74px;
     padding-bottom: 72px;
     width: 100%;
-    background: linear-gradient(293.74deg,#f8faff 34.3%,#f2f6ff 99.57%);
+    background: linear-gradient(293.74deg, #f8faff 34.3%, #f2f6ff 99.57%);
     border-top-left-radius: 578px;
     border-bottom-left-radius: 578px;
     margin-top: 65px;
     background-color: rgba(248, 250, 255, 1);
 }
-.titleBox{
+
+.titleBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 84px;
     margin-bottom: 76px;
 }
-.title{
+
+.title {
     font-family: 'Intro Regular';
     font-style: normal;
     font-weight: 700;
@@ -37,14 +41,14 @@
     margin-bottom: 50px;
 }
 
-.btnBox{
+.btnBox {
     display: flex;
     justify-content: flex-end;
     margin-right: 100px;
     align-items: center;
 }
 
-.btn{
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,33 +62,38 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-       text-align: center;
+    text-align: center;
     color: #1D253C;
     cursor: pointer;
 }
-.btn img{
+
+.btn img {
     margin-right: 10px;
 }
-.btn:hover{
+
+.btn:hover {
     opacity: 0.7;
 }
-.items{
+
+.items {
     display: flex;
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
     padding-left: 112px;
     padding-right: 164px;
 
 
 }
-.itemsWhatWeDo{
+
+.itemsWhatWeDo {
     display: flex;
     justify-content: space-between;
     padding-left: 220px;
     padding-right: 220px;
 
 }
-.calc{
+
+.calc {
     font-family: 'Intro Regular';
     font-style: normal;
     font-weight: 400;
@@ -92,7 +101,8 @@
     line-height: 24px;
     color: rgba(43, 107, 243, 1);
 }
-.subtitle{
+
+.subtitle {
     margin: 0 auto;
     font-family: 'Intro Book';
     font-style: normal;
@@ -108,12 +118,13 @@
     margin-bottom: 39px;
 }
 
-.GetStartedBtnInner{
+.GetStartedBtnInner {
     display: flex;
     justify-content: center;
     margin-top: 36px;
 }
-.GetStartedBtn{
+
+.GetStartedBtn {
     background: #FFDD2D;
     border-radius: 32px;
     width: 296px;
@@ -125,28 +136,30 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-     color: #1D253C;
+    color: #1D253C;
     cursor: pointer;
 }
-.GetStartedBtn:hover{
+
+.GetStartedBtn:hover {
     color: #FFF;
 }
 
-.paymentMethods{
+.paymentMethods {
     margin-top: 98px;
     margin-bottom: 46px;
 }
 
-.sliderBox{
+.sliderBox {
     padding-left: 171px;
     padding-right: 171px;
     margin: 0 auto;
 }
-.btnBoxAdaptive{
+
+.btnBoxAdaptive {
     display: none;
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 360px) {
     .itemsWhatWeDo {
         display: flex;
         flex-direction: column;
@@ -154,58 +167,74 @@
         padding-right: 0;
         align-items: center;
     }
-.bgMask{
-    display:none!important;
+.sliderBox{
+    overflow: hidden;
 }
-.btnBox{
-    display: none;
-}
-.centralize{
-    width: 0px;
-}
-    .titleBox{
+    .bgMask {
+        display: none !important;
+    }
+
+    .btnBox {
+        display: none;
+    }
+
+    .centralize {
+        width: 0px;
+    }
+
+    .titleBox {
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
         margin-top: 42px;
     }
-.title{
-    font-family: 'Intro Regular';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 11px;
-}
-    .btnBoxAdaptive{
+
+    .title {
+        font-family: 'Intro Regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 11px;
+    }
+
+    .btnBoxAdaptive {
         display: flex;
         justify-content: center;
         margin-top: 54px;
     }
-    .btn{
+
+    .btn {
         width: 328px;
     }
-    .whatWeDo{
+
+    .whatWeDo {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         padding-top: 54px;
 
     }
-  .subtitle{
-      font-size: 20px;
-      line-height: 32px;
-      width: 328px;
-      height: 128px;
-      margin-bottom: 31px;
-  }
-  .itemsWhatWeDo{
-      flex-direction: column;
-      padding-left: 0;
-      padding-right: 0;
-  }
-    .sliderBox{
+
+    .subtitle {
+        font-size: 20px;
+        line-height: 32px;
+        width: 328px;
+        height: 128px;
+        margin-bottom: 31px;
+    }
+
+    .itemsWhatWeDo {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sliderBox {
         padding-left: 0;
         padding-right: 0;
         margin-top: 35px;
+    }
+    .inner{
+        overflow: hidden;
     }
 }
