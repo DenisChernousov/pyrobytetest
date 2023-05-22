@@ -4,8 +4,7 @@
 
 ### React
 
-CSS по модулям
-Тултип ручками
-Слайдеры slick-react
-
-Табы react-tabs
+### CSS по модулям
+### Тултип ручками
+### Слайдеры slick-react
+### Табы react-tabs

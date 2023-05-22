@@ -5,7 +5,7 @@
 }
 
 .text {
-    width: 1160px;
+    max-width: 1160px;
     display: block;
     position: relative;
 }

@@ -7,7 +7,7 @@
     border-radius: 8px;
     border:2px solid rgba(183, 198, 231, 1);
     margin-bottom: 100px;
-    margin-left: 496px;
+    /*margin-left: 31rem;*/
     padding: 36px 32px 24px ;
 
 }
@@ -68,6 +68,7 @@
 .switch {
     display: flex;
 cursor: pointer;
+    background: #FFF;
 }
 
 .subtitle {
@@ -100,13 +101,19 @@ cursor: pointer;
     min-width: 72px;
     width: 100px;
     display: flex;
-
+    outline: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 2px solid rgba(183, 198, 231, 1);
     background-color: #EFF4FF;
 
+}
+.switchBtn:focus{
+    background: transparent;
+}
+.react-tabs:focus{
+    background: transparent;
 }
 .switchBtnAvtive{
     outline: none;
@@ -123,6 +130,7 @@ cursor: pointer;
 .switchBtnImg{
     width: 56px;
     height: 56px;
+
 }
 .switchBtnImgFoot{
     width: 68px;

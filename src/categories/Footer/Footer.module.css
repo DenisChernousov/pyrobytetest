@@ -3,14 +3,14 @@
     max-width: 100%;
     background: #F8FAFF;
     border: 1px solid rgba(194, 210, 244, 0.5);
-    padding-left: 202px;
+    padding-left: 0.5rem;
     padding-top: 85px;
-    padding-right: 202px;
+    padding-right: 0.5rem;
     padding-bottom: 56px;
 
 }
 .footerInner{
-    width: 1160px;
+    max-width: 1160px;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
@@ -199,6 +199,15 @@ align-items: center;
 .PrBfooter{
     display: none;
 }
+@media screen and (max-width: 1271px)
+{
+    .footerInner{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .footerInner {
         position: relative;
