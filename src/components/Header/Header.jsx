@@ -11,7 +11,7 @@ import searchIcon from "../../assets/img/Search.svg";
 const Header = (props) => {
     return (
 
-        <div className={style.header}>
+        <header className={style.header}>
             <div className={style.burgerInner}>
 <Burger/>
             </div>
@@ -34,7 +34,7 @@ const Header = (props) => {
                     </div>
 
             </div>
-        </div>
+        </header>
     );
 }
 

@@ -26,7 +26,7 @@ const Parthners = (props) => {
 
 
     return (
-        <div className={style.inner}>
+        <section className={style.inner}>
             <div className={style.bgMask}>
                 <img src={bgMask}/>
             </div>
@@ -88,7 +88,7 @@ const Parthners = (props) => {
 
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

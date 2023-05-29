@@ -13,7 +13,7 @@ import twoPin from "../../assets/img/twoPin.svg";
 const Footer = (props) => {
     return (
 
-        <div className={style.footer}>
+        <footer className={style.footer}>
             <div className={style.footerInner}>
 
                 <div className={style.about}>
@@ -152,7 +152,7 @@ const Footer = (props) => {
 
 
             </div>
-        </div>);
+        </footer>);
 }
 
 export default Footer;

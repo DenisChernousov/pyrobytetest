@@ -85,13 +85,13 @@ const Since = (props) => {
 
     return (
 
-        <div className={style.since}>
+        <section className={style.since}>
 
 
             <DropList/>
 
 
-        </div>
+        </section>
 
     );
 }

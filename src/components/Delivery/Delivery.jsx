@@ -12,7 +12,7 @@ const Delivery = (props) => {
 
     return (
 
-        <div className={style.delivery}>
+        <section className={style.delivery}>
             <div className={style.container}>
                 <h2 className={style.title}>
                     Express delivery market revolution
@@ -30,7 +30,7 @@ const Delivery = (props) => {
                        text={`Use our service and feel \n new quality of this traditional \n service!`}/>
             </div>
 
-        </div>);
+        </section>);
 }
 
 export default Delivery;

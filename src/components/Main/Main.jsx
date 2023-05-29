@@ -10,7 +10,7 @@ import OurService from "./OurService/OurService";
 const Main = (props) => {
     return (
 
-        <div className={style.main}>
+        <section className={style.main}>
             <div className={style.adaptive}>
                 <Parcel/>
                 <Track/>
@@ -51,7 +51,7 @@ const Main = (props) => {
                     <Track/>
                 </div>
             </div>
-        </div>);
+        </section>);
 }
 
 export default Main;
